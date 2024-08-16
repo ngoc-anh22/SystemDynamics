@@ -1,0 +1,357 @@
+{UTF-8}
+Adequacy of Public Transit  = A FUNCTION OF( )
+	~	
+	~		|
+
+Attractiveness of Driving  = A FUNCTION OF( Adequacy of Public Transit,Desired Travel Time\
+		,Public Transit Fare,Travel time)
+	~	
+	~		|
+
+Average Trip Length  = A FUNCTION OF( Attractiveness of Driving)
+	~	
+	~		|
+
+Public Transit Fare  = A FUNCTION OF( )
+	~	
+	~		|
+
+Cars in Region  = A FUNCTION OF( Average Trip Length,Cars per person,Population and Economic Activity of Region\
+		)
+	~	
+	~		|
+
+Cars per person  = A FUNCTION OF( Public Transport Ridership)
+	~	
+	~		|
+
+Population and Economic Activity of Region  = A FUNCTION OF( )
+	~	
+	~		|
+
+Pressure to reduce congestion  = A FUNCTION OF( Desired Travel Time,Travel time)
+	~	
+	~		|
+
+Travel time  = A FUNCTION OF( Highway Capacity,Traffic volume)
+	~	
+	~		|
+
+Public Transport Ridership  = A FUNCTION OF( Attractiveness of Driving)
+	~	
+	~		|
+
+Desired Travel Time  = A FUNCTION OF( )
+	~	
+	~		|
+
+Road Construction  = A FUNCTION OF( Pressure to reduce congestion)
+	~	
+	~		|
+
+Highway Capacity  = A FUNCTION OF( Road Construction)
+	~	
+	~		|
+
+Traffic volume  = A FUNCTION OF( Average Trip Length,Cars in Region,Trips per Day)
+	~	
+	~		|
+
+Trips per Day  = A FUNCTION OF( Attractiveness of Driving)
+	~	
+	~		|
+
+birth  = A FUNCTION OF( growth rate,population)
+	~	
+	~		|
+
+Cloud Formation  = A FUNCTION OF( Evaporation)
+	~	
+	~		|
+
+Coastal Ecosystem  = A FUNCTION OF( Saltwater Intrusion)
+	~	
+	~		|
+
+Coastal Flooding  = A FUNCTION OF( Sea Level)
+	~	
+	~		|
+
+Condition of Coastal Infrastructure  = A FUNCTION OF( Coastal Flooding)
+	~	
+	~		|
+
+death  = A FUNCTION OF( death rate,population)
+	~	
+	~		|
+
+death rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Economic Benifits  = A FUNCTION OF( Condition of Coastal Infrastructure,Investment in Emissions\
+		)
+	~	
+	~		|
+
+Ecosystem Service  = A FUNCTION OF( Coastal Ecosystem)
+	~	
+	~		|
+
+Evaporation  = A FUNCTION OF( Global Temperature)
+	~	
+	~		|
+
+Global Temperature  = A FUNCTION OF( Greenhouse Gas Emissions,Reflection of Sunlight)
+	~	
+	~		|
+
+Greenhouse Gas Emissions  = A FUNCTION OF( Livelihoods and Food Security,Investment in Emissions\
+		)
+	~	
+	~		|
+
+growth rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Industry  = A FUNCTION OF( )
+	~	
+	~		|
+
+Industry job opportunity  = A FUNCTION OF( Industry,People moving to town)
+	~	
+	~		|
+
+Investment in Emissions  = A FUNCTION OF( Economic Benifits)
+	~	
+	~		|
+
+Livelihoods and Food Security  = A FUNCTION OF( Ecosystem Service)
+	~	
+	~		|
+
+People moving to town  = A FUNCTION OF( Industry job opportunity,Service job opportunities\
+		)
+	~	
+	~		|
+
+population  = A FUNCTION OF( birth,death)
+	~	
+	~		|
+
+Reflection of Sunlight  = A FUNCTION OF( Cloud Formation)
+	~	
+	~		|
+
+Saltwater Intrusion  = A FUNCTION OF( Sea Level)
+	~	
+	~		|
+
+Sea Level  = A FUNCTION OF( Thermal Expansion of Oceans)
+	~	
+	~		|
+
+Service demanc  = A FUNCTION OF( People moving to town)
+	~	
+	~		|
+
+Service job opportunities  = A FUNCTION OF( People moving to town,Service demanc)
+	~	
+	~		|
+
+Thermal Expansion of Oceans  = A FUNCTION OF( Global Temperature)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,population,775,-241,199,18,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,2,death,964,-286,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,growth rate,595,-155,54,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,death rate,982,-141,49,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,birth,590,-306,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,6,5,1,1,0,43,0,0,192,0,-1--1--1,,1|(693,-350)|
+1,7,1,2,1,0,43,0,0,192,0,-1--1--1,,1|(828,-336)|
+1,8,1,5,1,0,43,0,0,192,0,-1--1--1,,1|(725,-223)|
+1,9,4,2,1,0,43,0,0,192,0,-1--1--1,,1|(995,-211)|
+1,10,3,5,1,0,43,0,0,192,0,-1--1--1,,1|(557,-219)|
+1,11,2,1,1,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(893,-208)|
+12,12,129,669,-302,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,13,130,868,-273,60,37,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+10,14,Industry,360,-10,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,Service demanc,857,-8,42,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,16,Industry job opportunity,362,163,56,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,People moving to town,640,164,67,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Service job opportunities,876,190,63,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+1,19,14,16,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,20,16,17,1,0,43,0,0,192,0,-1--1--1,,1|(486,97)|
+1,21,17,16,1,0,45,0,0,192,0,-1--1--1,,1|(367,194)|
+1,22,17,15,1,0,43,0,0,192,0,-1--1--1,,1|(686,67)|
+1,23,15,18,1,0,43,0,0,192,0,-1--1--1,,1|(962,87)|
+1,24,18,17,1,0,43,0,0,192,0,-1--1--1,,1|(691,253)|
+1,25,17,18,1,0,45,0,0,192,0,-1--1--1,,1|(775,126)|
+12,26,0,484,171,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,27,0,815,60,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,28,0,743,193,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,74,0
+1,1,29,3,1,0,45,0,0,192,0,-1--1--1,,1|(859,437)|
+10,2,Greenhouse Gas Emissions,741,599,66,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Global Temperature,990,577,61,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Sea Level,1343,588,43,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,2,3,1,0,43,0,0,192,0,-1--1--1,,1|(830,509)|
+10,6,Thermal Expansion of Oceans,1167,582,59,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,3,6,1,0,43,0,0,192,0,-1--1--1,,1|(1076,674)|
+1,8,6,4,1,0,43,0,0,192,0,-1--1--1,,1|(1289,696)|
+10,9,Coastal Flooding,1510,684,42,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,Condition of Coastal Infrastructure,1438,806,86,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+1,11,4,9,1,0,43,0,0,192,0,-1--1--1,,1|(1415,663)|
+1,12,9,10,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+10,13,Economic Benifits,1208,874,45,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Investment in Emissions,922,854,104,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,2,1,0,45,0,0,192,0,-1--1--1,,1|(756,784)|
+1,16,10,13,1,0,45,0,0,192,0,-1--1--1,,1|(1339,869)|
+1,17,13,14,1,0,43,0,0,192,0,-1--1--1,,1|(1098,930)|
+10,18,Saltwater Intrusion,1602,392,44,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,Coastal Ecosystem,1264,296,85,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,Ecosystem Service,861,251,82,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,21,Livelihoods and Food Security,479,421,72,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,4,18,1,0,43,0,0,192,0,-1--1--1,,1|(1530,531)|
+1,23,18,19,1,0,43,0,0,192,0,-1--1--1,,1|(1483,289)|
+1,24,19,20,1,0,45,0,0,192,0,-1--1--1,,1|(1076,205)|
+1,25,20,21,1,0,43,0,0,192,0,-1--1--1,,1|(626,266)|
+1,26,21,2,1,0,45,0,0,192,0,-1--1--1,,1|(546,593)|
+10,27,Evaporation,1121,390,56,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,Cloud Formation,945,325,48,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,Reflection of Sunlight,815,399,57,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,30,3,27,1,0,43,0,0,192,0,-1--1--1,,1|(1048,458)|
+1,31,27,28,1,0,43,0,0,192,0,-1--1--1,,1|(1047,321)|
+1,32,28,29,1,0,43,0,1,192,0,0-0-255,|||0-0-0,1|(843,343)|
+12,33,130,1298,400,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,34,130,963,389,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,35,129,1100,728,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+1,36,14,13,1,0,0,0,0,192,0,-1--1--1,,1|(1079,803)|
+12,37,129,1084,863,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 3
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,Road Construction,711,73,68,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Highway Capacity,522,127,65,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Travel time,718,194,52,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Traffic volume,483,261,58,35,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Cars in Region,481,405,59,40,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,Population and Economic Activity of Region,176,423,79,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Cars per person,734,556,59,39,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Public Transport Ridership,978,399,75,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,Attractiveness of Driving,981,263,65,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,Pressure to reduce congestion,928,145,87,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,Desired Travel Time,1145,190,53,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Adequacy of Public Transit,1288,268,62,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Public Transit Fare,1205,368,69,31,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Trips per Day,727,341,62,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,Average Trip Length,732,466,80,40,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,1,2,1,0,43,0,0,193,0,-1--1--1,,1|(588,78)|
+1,17,10,1,1,0,43,0,0,192,0,-1--1--1,,1|(833,84)|
+1,18,2,3,1,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(588,175)|
+1,19,3,10,1,0,43,0,0,192,0,-1--1--1,,1|(841,193)|
+1,20,11,10,0,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(0,0)|
+1,21,11,9,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,22,13,9,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,23,9,8,1,0,45,0,1,193,0,255-0-0,|||0-0-0,1|(1017,332)|
+1,24,8,7,1,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(892,505)|
+1,25,9,15,1,0,43,0,0,192,0,-1--1--1,,1|(895,391)|
+1,26,9,14,1,0,43,0,0,192,0,-1--1--1,,1|(877,328)|
+1,27,3,9,1,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(835,271)|
+1,28,14,4,1,0,43,0,0,192,0,-1--1--1,,1|(592,323)|
+1,29,15,5,1,0,43,0,0,192,0,-1--1--1,,1|(581,458)|
+1,30,4,3,1,0,43,0,0,192,0,-1--1--1,,1|(591,269)|
+1,31,6,5,1,0,43,0,0,192,0,-1--1--1,,1|(333,464)|
+1,32,5,4,1,0,43,0,0,192,0,-1--1--1,,1|(438,336)|
+1,33,12,9,0,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(0,0)|
+1,34,15,4,1,0,43,0,0,192,0,-1--1--1,,1|(562,399)|
+1,35,7,5,1,0,43,0,0,192,0,-1--1--1,,1|(551,516)|
+12,36,130,715,140,30,20,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,37,129,720,282,27,24,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,38,129,736,399,27,23,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,39,129,734,513,27,24,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 4
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+///---\\\
+:L<%^E!@
+5:Road Construction
+19:100,3
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

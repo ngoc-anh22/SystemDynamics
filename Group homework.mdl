@@ -1,0 +1,187 @@
+{UTF-8}
+Absoption Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Efficiency Gain Rate=
+	Efficiency Gain Rate Lookup Table
+	~	
+	~		|
+
+Efficiency Gain Rate Lookup Table(
+	[(0,0)-(10,1.5)],(1,1.01),(1,1.01),(2,1.03),(3,1.06),(4,1.1),(7,1.28),(9,1.45),(10,1.55\
+		))
+	~	
+	~	\!Month\!Efficiency Rate
+	|
+
+Efficiency Improvement  = A FUNCTION OF( Efficiency Gain Rate,Energy Use) ~~|
+Efficiency Improvement=
+	~	
+	~		|
+
+Emissions= INTEG (
+	Emissions Generation-Emissions Absorption,
+		1000)
+	~	
+	~		|
+
+Emissions Absorption  = A FUNCTION OF( Absoption Rate,Emissions)
+	~	
+	~		|
+
+Emissions Factor  = A FUNCTION OF( Emissions Factor Lookup table)
+	~	
+	~		|
+
+Emissions Factor Lookup table=A FUNCTION OF(Emissions Factor Lookup table) ~~|
+Emissions Factor Lookup table(
+	)
+	~	
+	~		|
+
+Emissions Generation  = A FUNCTION OF( Emissions,Emissions Factor)
+	~	
+	~		|
+
+Energy Consumption=
+	Energy Use*Energy Intensity
+	~	
+	~		|
+
+Energy Intensity=
+	Energy Intensity Lookup Table
+	~	
+	~		|
+
+Energy Intensity Lookup Table(
+	[(0,0)-(10,10)],(0,0),(1,2),(3,12),(4,20),(5,30),(9,90),(10,110))
+	~	
+	~	\!Month\!kWh/Unit
+	|
+
+Energy Use= INTEG (
+	Energy Consumption-Efficiency Improvement,
+		1000)
+	~	
+	~		|
+
+GHG Absorption  = A FUNCTION OF( )
+	~	
+	~		|
+
+GHG Concentration  = A FUNCTION OF( -GHG Absorption)
+	~	
+	~		|
+
+Sequestration Rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,82,0
+10,1,Energy Use,829,236,52,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,390,234,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(491,234)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(685,234)|
+11,5,0,588,234,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Energy Consumption,588,271,62,29,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,7,48,1225,236,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,1,100,0,0,22,0,192,0,-1--1--1,,1|(961,236)|
+1,9,10,7,4,0,0,22,0,192,0,-1--1--1,,1|(1134,236)|
+11,10,0,1048,236,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,Efficiency Improvement,1048,273,63,29,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Emissions,810,383,46,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,13,48,396,380,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,16,13,100,0,0,22,0,192,0,-1--1--1,,1|(492,380)|
+1,15,16,12,4,0,0,22,0,192,0,-1--1--1,,1|(677,380)|
+11,16,0,585,380,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,17,Emissions Generation,585,417,53,29,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,18,48,1235,383,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,21,12,100,0,0,22,0,192,0,-1--1--1,,1|(945,383)|
+1,20,21,18,4,0,0,22,0,192,0,-1--1--1,,1|(1135,383)|
+11,21,0,1040,383,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,22,Emissions Absorption,1040,420,51,29,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,23,0,827,184,146,44,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+Energy in transportation, industry, ....
+12,24,0,816,330,117,42,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+Emissions from the energy use process (CO2, CH4,...)|<<NnN>>|
+10,25,Energy Intensity,532,86,77,36,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,26,Efficiency Gain Rate,1106,94,73,32,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,27,Absoption Rate,1059,565,72,31,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,28,25,5,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,29,1,5,1,0,0,0,0,192,0,-1--1--1,,1|(715,135)|
+1,30,1,10,1,0,0,0,0,192,0,-1--1--1,,1|(953,139)|
+1,31,26,10,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,32,27,22,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,33,12,17,1,0,0,0,0,192,0,-1--1--1,,1|(722,494)|
+1,34,12,22,1,0,0,0,0,192,0,-1--1--1,,1|(901,500)|
+10,35,Emissions Factor Lookup table,193,491,46,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,36,Emissions Factor,534,553,61,31,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,37,36,17,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,38,Efficiency Gain Rate Lookup Table,1360,85,85,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,39,Energy Intensity Lookup Table,208,67,74,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,40,39,25,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,41,35,36,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,42,38,26,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+///---\\\
+:L<%^E!@
+5:Energy Intensity Lookup Table
+9:current
+19:82,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

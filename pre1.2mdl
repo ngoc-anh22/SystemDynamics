@@ -1,0 +1,244 @@
+{UTF-8}
+birth  = A FUNCTION OF( growth rate,population)
+	~	
+	~		|
+
+Cloud Formation  = A FUNCTION OF( Evaporation)
+	~	
+	~		|
+
+Coastal Ecosystem  = A FUNCTION OF( Saltwater Intrusion)
+	~	
+	~		|
+
+Coastal Flooding  = A FUNCTION OF( Sea Level)
+	~	
+	~		|
+
+Condition of Coastal Infrastructure  = A FUNCTION OF( Coastal Flooding)
+	~	
+	~		|
+
+death  = A FUNCTION OF( death rate,population)
+	~	
+	~		|
+
+death rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Economic Benifits  = A FUNCTION OF( Condition of Coastal Infrastructure,Investment in Emissions\
+		)
+	~	
+	~		|
+
+Ecosystem Service  = A FUNCTION OF( Coastal Ecosystem)
+	~	
+	~		|
+
+Evaporation  = A FUNCTION OF( Global Temperature)
+	~	
+	~		|
+
+Global Temperature  = A FUNCTION OF( Greenhouse Gas Emissions,Reflection of Sunlight)
+	~	
+	~		|
+
+Greenhouse Gas Emissions  = A FUNCTION OF( Livelihoods and Food Security,Investment in Emissions\
+		)
+	~	
+	~		|
+
+growth rate  = A FUNCTION OF( )
+	~	
+	~		|
+
+Industry  = A FUNCTION OF( )
+	~	
+	~		|
+
+Industry job opportunity  = A FUNCTION OF( Industry,People moving to town)
+	~	
+	~		|
+
+Investment in Emissions  = A FUNCTION OF( Economic Benifits)
+	~	
+	~		|
+
+Livelihoods and Food Security  = A FUNCTION OF( Ecosystem Service)
+	~	
+	~		|
+
+People moving to town  = A FUNCTION OF( Industry job opportunity,Service job opportunities\
+		)
+	~	
+	~		|
+
+population  = A FUNCTION OF( birth,death)
+	~	
+	~		|
+
+Reflection of Sunlight  = A FUNCTION OF( Cloud Formation)
+	~	
+	~		|
+
+Saltwater Intrusion  = A FUNCTION OF( Sea Level)
+	~	
+	~		|
+
+Sea Level  = A FUNCTION OF( Thermal Expansion of Oceans)
+	~	
+	~		|
+
+Service demanc  = A FUNCTION OF( People moving to town)
+	~	
+	~		|
+
+Service job opportunities  = A FUNCTION OF( People moving to town,Service demanc)
+	~	
+	~		|
+
+Thermal Expansion of Oceans  = A FUNCTION OF( Global Temperature)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,population,775,179,199,18,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,2,death,964,134,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,growth rate,595,265,54,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,death rate,982,279,49,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,birth,590,114,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,6,5,1,1,0,43,0,0,192,0,-1--1--1,,1|(693,70)|
+1,7,1,2,1,0,43,0,0,192,0,-1--1--1,,1|(828,84)|
+1,8,1,5,1,0,43,0,0,192,0,-1--1--1,,1|(725,197)|
+1,9,4,2,1,0,43,0,0,192,0,-1--1--1,,1|(995,209)|
+1,10,3,5,1,0,43,0,0,192,0,-1--1--1,,1|(557,201)|
+1,11,2,1,1,0,45,0,1,192,0,255-0-0,|||0-0-0,1|(893,212)|
+12,12,129,669,118,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,13,130,868,147,60,37,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+10,14,Industry,360,410,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,Service demanc,857,412,42,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,16,Industry job opportunity,362,583,56,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,People moving to town,640,584,67,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Service job opportunities,876,610,63,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+1,19,14,16,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,20,16,17,1,0,43,0,0,192,0,-1--1--1,,1|(486,517)|
+1,21,17,16,1,0,45,0,0,192,0,-1--1--1,,1|(367,614)|
+1,22,17,15,1,0,43,0,0,192,0,-1--1--1,,1|(686,487)|
+1,23,15,18,1,0,43,0,0,192,0,-1--1--1,,1|(962,507)|
+1,24,18,17,1,0,43,0,0,192,0,-1--1--1,,1|(691,673)|
+1,25,17,18,1,0,45,0,0,192,0,-1--1--1,,1|(775,546)|
+12,26,0,484,591,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,27,0,815,480,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,28,0,743,613,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,74,0
+1,1,29,3,1,0,45,0,0,192,0,-1--1--1,,1|(859,236)|
+10,2,Greenhouse Gas Emissions,741,398,66,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Global Temperature,990,376,61,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Sea Level,1343,387,43,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,2,3,1,0,43,0,0,192,0,-1--1--1,,1|(830,308)|
+10,6,Thermal Expansion of Oceans,1167,381,59,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,3,6,1,0,43,0,0,192,0,-1--1--1,,1|(1076,473)|
+1,8,6,4,1,0,43,0,0,192,0,-1--1--1,,1|(1289,495)|
+10,9,Coastal Flooding,1510,483,42,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,Condition of Coastal Infrastructure,1438,605,86,29,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+1,11,4,9,1,0,43,0,0,192,0,-1--1--1,,1|(1415,462)|
+1,12,9,10,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+10,13,Economic Benifits,1208,673,45,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Investment in Emissions,922,653,104,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,2,1,0,45,0,0,192,0,-1--1--1,,1|(756,583)|
+1,16,10,13,1,0,45,0,0,192,0,-1--1--1,,1|(1339,668)|
+1,17,13,14,1,0,43,0,0,192,0,-1--1--1,,1|(1098,729)|
+10,18,Saltwater Intrusion,1602,191,44,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,Coastal Ecosystem,1264,95,85,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,Ecosystem Service,861,50,82,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,21,Livelihoods and Food Security,479,220,72,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,4,18,1,0,43,0,0,192,0,-1--1--1,,1|(1530,330)|
+1,23,18,19,1,0,43,0,0,192,0,-1--1--1,,1|(1483,88)|
+1,24,19,20,1,0,45,0,0,192,0,-1--1--1,,1|(1076,4)|
+1,25,20,21,1,0,43,0,0,192,0,-1--1--1,,1|(626,65)|
+1,26,21,2,1,0,45,0,0,192,0,-1--1--1,,1|(546,392)|
+10,27,Evaporation,1121,189,56,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,Cloud Formation,945,124,48,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,29,Reflection of Sunlight,815,198,57,29,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,30,3,27,1,0,43,0,0,192,0,-1--1--1,,1|(1048,257)|
+1,31,27,28,1,0,43,0,0,192,0,-1--1--1,,1|(1047,120)|
+1,32,28,29,1,0,43,0,1,192,0,0-0-255,|||0-0-0,1|(843,142)|
+12,33,130,1298,199,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,34,130,963,188,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,35,129,1100,527,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+1,36,14,13,1,0,0,0,0,192,0,-1--1--1,,1|(1079,602)|
+12,37,129,1084,662,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+///---\\\
+:L<%^E!@
+5:Thermal Expansion of Oceans
+19:74,1
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
